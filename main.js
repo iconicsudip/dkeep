@@ -207,3 +207,7 @@ function changemode(){
     });
     location.reload();
 }
+const dragArea = document.querySelector("#save_note");
+new Sortable(dragArea,{
+    animation:350,
+});
