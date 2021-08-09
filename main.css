@@ -131,7 +131,7 @@ body,
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     grid-auto-flow: dense;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     margin: 2rem;
     justify-items: center;
     flex-direction: row;
