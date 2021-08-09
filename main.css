@@ -1,0 +1,286 @@
+body,
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-gap:0.5rem
+}
+.nav input{
+    height: 1.85rem;
+    background: rgb(255, 255, 255);
+    cursor: text;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px black;
+    width: 40vw;
+    border: none;
+    outline: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#note {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+#note_take {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.note_input {
+    height: 2.5rem;
+    background: rgb(255, 255, 255);
+    cursor: text;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+    width: 100%;
+}
+
+.note_input h3 {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.note_take_title {
+    height: 2.5rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    cursor: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+.note_update_title{
+    height: 2.5rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    cursor: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+.content_note {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 40vw;
+}
+
+.total_note {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 17rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    width: 40vw;
+    background: white;
+    height: 2.3rem;
+}
+
+#save_note {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+    margin: 2rem;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.save_content_note {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 20rem;
+}
+.update_content_note{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+    width: 20rem;
+    background: white;
+}
+.dltbutton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: white;
+    border-radius:5px;
+}
+.link{
+    float: right;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-weight: 800;
+}
+.link a{
+    color: black;
+    text-decoration: none;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.8);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+}
+.Model{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #edebebde;
+    left: 0;
+    backdrop-filter: blur(1px);
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+.active + .modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+button{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+}
+button:hover{
+    background: #e7e6e6;
+}
+.darkmoon{
+    color: white;
+}
+.darknote_input{
+    box-shadow: 0px 0px 3px 0px white;
+    background: transparent;
+}
+.darkcontent_note{
+    box-shadow: 0px 0px 3px 0px white;
+}
+.darkcontent_note_input{
+    color: #e8eaed;
+    background: transparent;
+}
+.darkcontent_note_textarea{
+    color: #e8eaed;
+    background: transparent;
+}
+.darksave_content_note{
+    box-shadow: 0px 0px 3px 0px white;
+}
+.darknote_take_title{
+    background: transparent;
+    color: rgb(232, 234, 237);
+}
+.darknoteText{
+    background: transparent;
+    color: rgb(232, 234, 237);
+}
+.darkmodel{
+    background: #202124;
+}
+.darkclose{
+    background: white;
+    color: black;
+}
