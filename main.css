@@ -139,7 +139,11 @@ body,
     align-content: center;
     justify-content: center;
 }
-
+.logo{
+    display: flex;
+    position: absolute;
+    margin-top: -2rem;
+}
 .save_content_note {
     display: flex;
     flex-wrap: wrap;
