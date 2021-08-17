@@ -67,7 +67,7 @@ body,
 .note_take_title {
     height: 2.5rem;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: transparent;
     cursor: auto;
     border-radius: 5px;
     border: none;
@@ -79,7 +79,7 @@ body,
 .note_update_title{
     height: 2.5rem;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: transparent;
     cursor: auto;
     border-radius: 5px;
     border: none;
@@ -123,7 +123,6 @@ body,
     align-items: center;
     grid-gap: 0.5rem;
     width: 40vw;
-    background: white;
     height: 2.3rem;
 }
 
@@ -217,7 +216,7 @@ body,
     transition: 0.7s;
 }
 .Model{
-    display: flex;
+    display: none;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -233,6 +232,7 @@ body,
     backdrop-filter: blur(1px);
 }
 .active {
+    display: flex;
     visibility: visible;
     opacity: 1;
 }
@@ -287,4 +287,110 @@ button:hover{
 .darkclose{
     background: white;
     color: black;
+}
+.dropback{
+    background: rgb(44, 44, 44)!important;
+    box-shadow: 0px 0px 3px 0px black!important;
+}
+.dropcolor{
+    display: none;
+    height: 8rem;
+    width: 8rem;
+    background: rgb(199, 199, 199);
+    position: absolute;
+    box-shadow: 0px 0px 3px 0px white;
+}
+.colorpallete:hover .dropcolor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 0.5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#default{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: transparent;
+    border-radius: 50%;
+}
+#redcolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: rgb(242, 139, 130);
+    background-color: #5c2b29;
+    border-radius: 50%;
+}
+#orangecolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background:orange;
+    border-radius: 50%;
+}
+#yellowcolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: yellow;
+    border-radius: 50%;
+}
+#greencolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background:green;
+    border-radius: 50%;
+}
+#tealcolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: teal;
+    border-radius: 50%;
+}
+#bluecolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: blue;
+    border-radius: 50%;
+}
+#darkbluecolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: darkblue;
+    border-radius: 50%;
+}
+#purplecolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: purple;
+    border-radius: 50%;
+}
+#pinkcolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: pink;
+    border-radius: 50%;
+}
+#browncolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: brown;
+    border-radius: 50%;
+}
+#greycolor{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-shadow: 0px 0px 1px 1px white;
+    background: grey;
+    border-radius: 50%;
 }
